@@ -29,11 +29,11 @@ function App() {
   };
 
   return (
-    <div className="w-full min-h-screen   sm:max-w-screen-md mx-auto flex flex-col justify-center items-center sm:p-6">
+    <div className="flex flex-col items-center justify-center min-h-screen  ">
       <h1 className='text-4xl font-sans text-neutral-very-dark-cyan font-extrabold tracking-[1rem] text-center  mb-6'>
         SPLI<br />TTER
         </h1>
-      <div className="w-full grid  sm:grid-cols-2 bg-neutral-white p-6 rounded-2xl gap-6">
+      <div className=" w-[70%] grid max-w-screen-md sm:grid-cols-2 bg-neutral-white p-8 rounded-2xl gap-8">
         <SplitBill setBillAmount={setBillAmount} setTipPercentage={setTipPercentage} setNumPeople={setNumPeople} error={error} setError={setError} />
         <TipAmount
           tipAmountPerPerson={tipAmountPerPerson}

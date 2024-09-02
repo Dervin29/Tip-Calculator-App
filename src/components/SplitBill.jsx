@@ -18,7 +18,7 @@ const SplitBill = ({ setBillAmount, setTipPercentage, setNumPeople, error, setEr
   return (
     <form className='flex flex-col gap-4'>
       <div className='flex flex-col'>
-        <label className='text-xl font-bold text-neutral-dark-grayish-cyan' htmlFor="bill-amount">Bill</label>
+        <label className='text-base font-bold text-neutral-dark-grayish-cyan' htmlFor="bill-amount">Bill</label>
         <div className="flex items-center bg-neutral-very-light-grayish-cyan  border border-neutral-grayish-cyan px-4 rounded">
           <span className="text-neutral-dark-grayish-cyan">
             <img className='w-4' src={dollar} alt="dollar" />
@@ -32,7 +32,7 @@ const SplitBill = ({ setBillAmount, setTipPercentage, setNumPeople, error, setEr
           />
         </div>
       </div>
-      <label className='text-xl font-bold text-neutral-dark-grayish-cyan' htmlFor="tip-amount">Select Tip %</label>
+      <label className='text-base font-bold text-neutral-dark-grayish-cyan' htmlFor="tip-amount">Select Tip %</label>
       <div className='grid grid-cols-2 sm:grid-cols-3 gap-2'>
         {[5, 10, 15, 25, 50].map((percentage) => (
           <button
@@ -55,9 +55,10 @@ const SplitBill = ({ setBillAmount, setTipPercentage, setNumPeople, error, setEr
         />
       </div>
       <div className="flex flex-col">
-        <div className='flex items-center justify-between '><label className='text-xl font-bold text-neutral-dark-grayish-cyan' htmlFor="num-people">Number of People</label>
+        <div className='flex items-center justify-between '>
+          <label className='text-base font-bold text-neutral-dark-grayish-cyan' htmlFor="num-people">Number of People</label>
           {error && (
-            <div className="text-red-500 text-xl mb-2">{error}</div>
+            <div className=" text-red-500 text-base ">{error}</div>
           )}</div>
         <div className={`flex items-center bg-neutral-very-light-grayish-cyan border border-neutral-grayish-cyan px-4 rounded ${error ? 'border-2  border-red-500' : ''}`}>
           <span className="text-neutral-dark-grayish-cyan">

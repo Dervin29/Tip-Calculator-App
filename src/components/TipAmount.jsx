@@ -2,7 +2,7 @@ import React from 'react';
 
 const TipAmount = ({ tipAmountPerPerson, totalAmountPerPerson, reset }) => {
   return (
-    <div className='flex flex-col justify-between gap-2 bg-neutral-very-dark-cyan p-6 rounded-xl'>
+    <div className={'flex flex-col justify-between gap-2 bg-neutral-very-dark-cyan p-6 rounded-xl'}>
       <div className='flex flex-col pt-4  gap-4'>
         <div className='flex justify-between items-center'>
           <div className='flex flex-col text-sm text-neutral-white'>
